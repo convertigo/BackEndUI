@@ -1,0 +1,85 @@
+[
+  {
+    "view": "EditPage",
+    "navParams": {"data": {}}
+  },
+  {
+    "view": "EditPage",
+    "requestable": "BackEndUI.GetDocument",
+    "data": {
+      "error": "not_found",
+      "reason": "Database does not exist."
+    },
+    "navParams": null
+  },
+  {
+    "view": "LoginPage",
+    "navParams": {"data": {}}
+  },
+  {
+    "view": "MainPage",
+    "navParams": {"data": {}}
+  },
+  {
+    "view": "LoginPage",
+    "requestable": "BackEndUI.BuildMenu",
+    "data": {"databases": [
+      {
+        "name": "ag2r_fullsync",
+        "views": []
+      },
+      {
+        "name": "c8ofullsyncgrp",
+        "views": []
+      },
+      {
+        "name": "flightshare_fullsync",
+        "views": [
+          {"view": "AirportsByCity"},
+          {"view": "AirportsByCountry"},
+          {"view": "AirportsByIACO"},
+          {"view": "AirportsByIACOOrCity"},
+          {"view": "AirportsByIACOWithAcl"},
+          {"view": "Flights"},
+          {"view": "PlanesByTag"},
+          {"view": "PublishRequests"},
+          {"view": "PublishedFlights"},
+          {"view": "PublishedFlightsDetails"},
+          {"view": "RegisterRequests"},
+          {"view": "users"}
+        ]
+      },
+      {
+        "name": "loxamgp_fullsync",
+        "views": [
+          {"view": "Generated"},
+          {"view": "Inprogress"},
+          {"view": "Submitted"}
+        ]
+      },
+      {
+        "name": "vigieop_fullsync",
+        "views": [
+          {"view": "EmployeesByName"},
+          {"view": "EmployeesByNameAndFirstName"},
+          {"view": "ListenEmployeeView"}
+        ]
+      }
+    ]},
+    "navParams": null
+  },
+  {
+    "view": "MainPage",
+    "requestable": "BackEndUI.ExecuteView",
+    "data": {"ids": [
+      {"_id": "F-GXCF"},
+      {"_id": "F-GXMV"},
+      {"_id": "F-HAAT"},
+      {"_id": "F-HEVB"},
+      {"_id": "F-HGTL"},
+      {"_id": "F-HLTP"},
+      {"_id": "N807DS"}
+    ]},
+    "navParams": null
+  }
+]
